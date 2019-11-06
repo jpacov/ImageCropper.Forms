@@ -41,7 +41,7 @@ namespace Stormlion.ImageCropper
 
         public Action Faiure { get; set; }
 
-        public async void Show(Page page, string imageFile = null)
+        public async Task Show(Page page, string imageFile = null)
         {
             if(imageFile == null)
             {

@@ -1,6 +1,7 @@
 # ImageCropper.Forms
 
 Xamarin.Forms plugin to crop and rotate photos.
+UPDATED! Works on Android 28 & Resolves iOS missing icons issue
 
 [![NuGet](https://img.shields.io/nuget/v/ImageCropper.Forms.svg)](https://www.nuget.org/packages/ImageCropper.Forms/)
 
