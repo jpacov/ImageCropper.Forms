@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ImageCropper\ImageCropper.csproj">
-      <Project>{93569DFA-F3CF-44DB-855C-4526CF92937A}</Project>
+      <Project>{93F1186D-AC71-47AC-A40E-B43CA82EB57B}</Project>
       <Name>ImageCropper</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Binding\TOCropViewController\TOCropViewController.csproj">
@@ -56,13 +56,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Plugin.Permissions">
-      <Version>3.0.0.12</Version>
+      <Version>6.0.1</Version>
     </PackageReference>
     <PackageReference Include="Xam.Plugin.Media">
-      <Version>4.0.1.5</Version>
+      <Version>5.0.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>4.3.0.947036</Version>
+      <Version>4.6.0.800</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

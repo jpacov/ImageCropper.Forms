@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ImageCropper.Forms.Fix.v3</id>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <authors>westito</authors>
     <owners>westito</owners>
     <projectUrl>https://github.com/westito/ImageCropper.Forms</projectUrl>
@@ -15,11 +15,15 @@
     <tags>xamarin forms crop rotate photo image</tags>
     <dependencies>
       <group>
-        <dependency id="Xamarin.Forms" version="4.3.0"/>
-        <dependency id="Xam.Plugin.Media" version="4.0.1.5" />
+        <dependency id="Xamarin.Forms" version="4.6.0"/>
+        <dependency id="Xam.Plugin.Media" version="5.0.1" />
       </group>
       <group targetFramework="monoandroid">
         <dependency id="Xamarin.Android.Support.Exif" version="28.0.0.3" />
+        <dependency id="Plugin.CurrentActivity" version="2.1.0.4" />
+      </group>
+      <group targetFramework="Xamarin.iOS">
+        <dependency id="Plugin.Persmissions" version="6.0.1" />
       </group>
     </dependencies>
   </metadata>
@@ -30,10 +34,9 @@
     <file src="ImageCropper/ImageCropper.Android/bin/Release/Stormlion.ImageCropper.dll" target="lib/MonoAndroid" />
     <file src="ImageCropper/ImageCropper.Android/bin/Release/Binding_AndroidImageCropper.dll" target="lib/MonoAndroid" />
     <file src="ImageCropper/ImageCropper.Android/bin/Release/Stormlion.ImageCropper.Android.dll" target="lib/MonoAndroid" />
-    
 
-    <file src="ImageCropper/ImageCropper.iOS/bin/Release/Stormlion.ImageCropper.dll" target="lib/Xamarin.iOS10" />
-    <file src="ImageCropper/ImageCropper.iOS/bin/Release/TOCropViewController.dll" target="lib/Xamarin.iOS10" />
-    <file src="ImageCropper/ImageCropper.iOS/bin/Release/Stormlion.ImageCropper.iOS.dll" target="lib/Xamarin.iOS10" />
+    <file src="ImageCropper/ImageCropper.iOS/bin/Release/Stormlion.ImageCropper.dll" target="lib/Xamarin.iOS" />
+    <file src="ImageCropper/ImageCropper.iOS/bin/Release/TOCropViewController.dll" target="lib/Xamarin.iOS" />
+    <file src="ImageCropper/ImageCropper.iOS/bin/Release/Stormlion.ImageCropper.iOS.dll" target="lib/Xamarin.iOS" />
   </files>
 </package>
