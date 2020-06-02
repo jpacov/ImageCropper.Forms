@@ -23,11 +23,11 @@ namespace Test
 
         protected async void OnClickedRectangle(object sender, EventArgs e)
         {
-            new ImageCropper()
+            await new ImageCropper()
             {
-//                PageTitle = "Test Title",
-//                AspectRatioX = 1,
-//                AspectRatioY = 1,
+                //                PageTitle = "Test Title",
+                //                AspectRatioX = 1,
+                //                AspectRatioY = 1,
                 Success = (imageFile) =>
                 {
                     Device.BeginInvokeOnMainThread(() =>
@@ -38,9 +38,9 @@ namespace Test
             }.Show(this);
         }
 
-        private void OnClickedCircle(object sender, EventArgs e)
+        private async void OnClickedCircle(object sender, EventArgs e)
         {
-            new ImageCropper()
+            await new ImageCropper()
             {
                 CropShape = ImageCropper.CropShapeType.Oval,
                 Success = (imageFile) =>

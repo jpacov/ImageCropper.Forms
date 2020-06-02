@@ -21,6 +21,7 @@ namespace Test.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             Platform.Init();
+            Xamarin.Essentials.Platform.Init(this, bundle);
 
             base.OnCreate(bundle);
 
