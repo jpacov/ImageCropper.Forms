@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>ImageCropper.Forms.Fix.v3</id>
-    <version>0.4.0</version>
-    <authors>westito</authors>
-    <owners>westito</owners>
-    <projectUrl>https://github.com/westito/ImageCropper.Forms</projectUrl>
-    <licenseUrl>https://github.com/westito/ImageCropper.Forms/blob/master/LICENSE.md</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <id>ImageCropper.Forms.Fix.v7</id>
+    <version>0.7.0</version>
+    <authors>iliyanPopov</authors>
+    <owners>iliyanPopov</owners>
+    <projectUrl>https://github.com/IliyanPopov/ImageCropper.Forms</projectUrl>
+    <licenseUrl>https://github.com/IliyanPopov/ImageCropper.Forms/blob/master/licenseUrl.md</licenseUrl>
+    <requirelicenseUrlAcceptance>false</requirelicenseUrlAcceptance>
     <description>Xamarin.Forms plugin to crop and rotate photos. Works on Android 28!</description>
-    <summary>Xamarin.Forms plugin to crop and rotate photos. Supports Android and iOS. Updated version: Works on Android 28, resolves iOS icon issue</summary>
+    <summary>Xamarin.Forms plugin to crop and rotate photos. Supports Android and iOS. Updated version: Works on Android 28, resolves iOS icon issue. Uses .Net Standard 2.0</summary>
     <releaseNotes>Update to Android 29 and Xamarin Forms 4.6</releaseNotes>
-    <copyright>© StormLion 2018</copyright>
+    <copyright>© StormLion 2020</copyright>
     <tags>xamarin forms crop rotate photo image</tags>
     <dependencies>
       <group>
@@ -27,13 +27,13 @@
       </group>
       <group targetFramework="Xamarin.iOS">
       </group>
-      <group targetFramework="netstandard2.1">
+      <group targetFramework="netstandard2.0">
       </group>
     </dependencies>
   </metadata>
   <files>
     
-    <file src="ImageCropper/ImageCropper/bin/Release/netstandard2.1/Stormlion.ImageCropper.dll" target="lib/netstandard2.1" />
+    <file src="ImageCropper/ImageCropper/bin/Release/netstandard2.0/Stormlion.ImageCropper.dll" target="lib/netstandard2.0" />
 
     <file src="ImageCropper/ImageCropper.Android/bin/Release/Stormlion.ImageCropper.dll" target="lib/MonoAndroid" />
     <file src="ImageCropper/ImageCropper.Android/bin/Release/Binding_ImageCropperAndroid.dll" target="lib/MonoAndroid" />
