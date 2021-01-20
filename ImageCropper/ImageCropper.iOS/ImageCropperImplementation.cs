@@ -48,7 +48,17 @@ namespace Stormlion.ImageCropper.iOS
                 UIApplication.SharedApplication.KeyWindow.RootViewController.DismissViewController(true, null);
             };
 
-            UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(cropViewController, true, null);
+
+            //UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(cropViewController, true, null);
+            UIWindow window = UIApplication.SharedApplication.KeyWindow;
+            UIViewController viewController = window.RootViewController;
+
+            while (viewController.PresentedViewController != null)
+            {
+                viewController = viewController.PresentedViewController;
+            }
+            viewController.PresentViewController(cropViewController, true, null);
+
 
             if (!string.IsNullOrWhiteSpace(imageCropper.PageTitle) && cropViewController.TitleLabel != null)
             {
@@ -75,7 +85,15 @@ namespace Stormlion.ImageCropper.iOS
                 Debug.WriteLine("NOT saved as " + jpgFilename + " because" + err.LocalizedDescription);
                 imageCropper.Faiure?.Invoke();
             }
-            UIApplication.SharedApplication.KeyWindow.RootViewController.DismissViewController(true, null);
+            //UIApplication.SharedApplication.KeyWindow.RootViewController.DismissViewController(true, null);
+            UIWindow window = UIApplication.SharedApplication.KeyWindow;
+            UIViewController viewController = window.RootViewController;
+
+            while (viewController.PresentedViewController != null)
+            {
+                viewController = viewController.PresentedViewController;
+            }
+            viewController.DismissViewController(true, null);
         }
     }
 }
